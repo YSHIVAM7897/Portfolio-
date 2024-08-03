@@ -2,9 +2,13 @@
   margin: 0%;
   padding: 0%;
  }
+
 .body{
-  background-color:#030303;
+  background-color: #000;
   color: #fff;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
  }
  
 .bott{
@@ -14,17 +18,22 @@
   background-color:#1f1e1e;
   height: 60px;
  }
+
 .left{
   font-size: 1.5rem;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
- .list{
+.list{
   display: flex;
   justify-content: end;
   color:#fff;
   font-size: 18px;
  }
+
+  
 
  nav ul li {
   list-style: none;
@@ -41,6 +50,11 @@
    position: relative;
  }
 
+ nav ul li a:hover{
+  color: rgb(177, 207, 207);
+  font-size: 1rem;
+ }
+
  nav ul li a::after{
   content: '';
   width: 00%;
@@ -54,7 +68,37 @@
  }
  nav ul li a:hover::after{
   width: 100px; 
+  
  }
+
+ .about{
+  display: flex;
+  justify-content:center ;
+  margin: 100px 0;
+}
+ 
+.about div{
+  width: 30%;
+}
+
+.leftabout{
+  background-color:rgb(188, 137, 188);
+  width: 50%;
+  font-size: x-large;
+  margin: 95px;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+  border-radius: 0.4rem;
+
+}
+ 
+.rightabout img{
+  margin-top: 18rem;
+  margin-left: -9.5rem;
+  border-radius: 0.4rem; 
+   
+}
 
  .left{
   font-size: 1.5rem;
@@ -163,31 +207,35 @@
  
  .contact-left{
   flex-basis: 35%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-left: 15px;
   margin-top: 35px;
  }
 
  .contact-left h1{
   color:#fff;
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   display: flex
  }
 
  .contact-left p{
   margin-top: 35px;
   display: flex;
+  font-size: 1.5rem;
  }
 
  .contact-left p img{
   color: #ff004f;
+  background-color:#262626;
   margin-right: 15px;
-  font-size: 35px;
+  border-radius: 50%;
+  padding: 0.1rem;
+  
  }
 
-
  .contact-right{
-  
   margin-left: 15rem;
   
  }
@@ -196,17 +244,29 @@
   margin-top: 30px;
  }
 
- .social-media img{
+ .social-media img {
   text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
+  size: 50rem;
+  margin-right: 10px;
   color: #ff004f; 
   display: inline-block;
   transition: 0.5s;
 }
 
-.social-media a:hover{
-  color: #ff004f;
+.social-media a{
+  text-decoration: none;
+  background-color:#262626;
+  margin-right: 9px;
+  font-size: 9rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+  font-size: 30px;
+  color: #262626;
+  display: inline block;
+} 
+
+.a:hover{
   transform: translateY(-5px);
 }
 
@@ -278,3 +338,5 @@ form input, form textarea{
   justify-content: center;
   color: #ff004f;
 }
+
+ 
